@@ -1,5 +1,5 @@
 ## image-resolution-downscaler
-A little program to get familiar with Java 2D arrays.
+### A little program to get familiar with Java 2D arrays.
 
 **ImageDownScaler** will request the user:
 * to enter an image url
