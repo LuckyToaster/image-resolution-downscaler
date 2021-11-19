@@ -1,12 +1,9 @@
-package image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Scanner;
-
 import javax.imageio.ImageIO;
-//import java.util.Arrays;
 
 public class ImageDownScaler {
 	public static void main(String[] args) throws IOException {
