@@ -49,10 +49,19 @@ public class ImageDownScaler {
 			}
 		}
 			
-		// write the output image
+		// Get directory
 		String directory = Paths.get(url).getParent().toString();
-		File outputImage = new File(directory + "\\" + fileName);
-		ImageIO.write(output, "png", outputImage);
+		// Determine OS and write the output image
+		File outputImage = null;
+		if (System.getProperty("os.name").equals("Windows 10")) {
+			outputImage = new File(directory + "\\" + fileName);
+			ImageIO.write(output, "png", outputImage);
+		} else if(System.getProperty("os.name").equals("Linux")) {
+			outputImage = new File(directory + "/" + fileName);
+			ImageIO.write(output, "png", outputImage);
+		} else {
+			System.out.println("Cannot determine OS, are you on Windows 10 or Linux?");
+		}
 		
 	}
 }
