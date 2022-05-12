@@ -4,4 +4,4 @@
 **ImageDownScaler** will request the user:
 * to enter an image url
 * the name of the downscaled version of the image to be produced
-* to what percentaje (of the original image's size) he wishes to downscale the image
+* to what percentaje (of the original image's size) the user wishes to downscale the image
